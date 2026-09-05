@@ -7,7 +7,7 @@ const player = players.LocalPlayer
 
 local repository = "https://raw.githubusercontent.com/telamonium/RichTextConstructor/main/"
 
-local interface = runService:IsStudio() and require(script.interface) or loadstring(game:HttpGet(repository.."interface.lua"))
+local interface = runService:IsStudio() and require(script.interface) or loadstring(game:HttpGet(repository.."interface.lua"))()
 local window = interface.Window :: ScreenGui
 local sections = {
 	convert = window.Convert :: Frame,
